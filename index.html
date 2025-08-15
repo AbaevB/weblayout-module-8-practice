@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Новости - Вкурсе-медиа</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+        <a href="#" class="header__logo-link" aria-label="Переход на главную страницу">
+          <svg class="header__logo" width="170" height="60" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-header-logo"></use>
+          </svg>
+        </a>
+        <nav class="main-nav header__main-nav">
+          <div class="main-nav__wrapper">
+            <div class="main-nav__inner">
+              <div class="main-nav__menu-inner">
+                <h2 class="main-nav__head">Компания</h2>
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Новости</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Статьи</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Мнения</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Эфиры</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Инфографика</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Редакция</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="main-nav__menu-inner">
+                <h2 class="main-nav__head">Рубрики</h2>
+                <ul class="main-nav__list main-nav__list--menu">
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Политика</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Спорт</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Общество</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Наука</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Экономика</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Культура</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">В Мире</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Недвижимость</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Происшествия</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="main-nav__link" href="#">Туризм</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class="main-nav__social">
+              <li class="main-nav__social-item">
+                <a class="main-nav__social-link" href="#" aria-label="Ссылка на Youtube">
+                  <svg class="header__logo" width="30" height="30" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="main-nav__social-item">
+                <a class="main-nav__social-link" href="#" aria-label="Ссылка на Одноклассники">
+                  <svg class="header__logo" width="30" height="30" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="main-nav__social-item">
+                <a class="main-nav__social-link" href="#" aria-label="Ссылка на ВКонтакте">
+                  <svg class="header__logo" width="30" height="30" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="main-nav__social-item">
+                <a class="main-nav__social-link" href="#" aria-label="Ссылка на Телеграм">
+                  <svg class="header__logo" width="30" height="30" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-tg"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a href="tel:+79277777777" class="main-nav__phone">
+              <svg class="header__phone-logo" width="22" height="22" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-phone"></use>
+              </svg>
+              <span class="main-nav__phone-text">+7 927 777 77 77</span>
+            </a>
+          </div>
+        </nav>
+        <a href="tel:+79277777777" class="header__phone">+7 927 777 77 77</a>
+        <ul class="header__users-list">
+          <li class="header__users-item">
+            <a class="header__users-link" href="#" aria-label="Ссылка на геолокацию офиса">
+              <svg class="header__users-icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-geo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header__users-item">
+            <button class="header__users-link" type="button" aria-label="Поиск по сайту">
+              <svg class="header__users-icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-search"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header__users-item header__users-item--burger">
+            <button class="header__users-link" type="button" aria-label="Открыть меню">
+              <svg class="header__burger" width="32" height="32" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-burger"></use>
+              </svg>
+              <svg class="header__burger header__burger--close" width="32" height="32" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-burger-close"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Новости</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <span class="breadcrumbs__link">Тенденции в Развитии Искусственного Интеллекта в 2024 Году</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="categories">
+      <h2 class="visually-hidden">Категории статей</h2>
+      <div class="container">
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a class="categories__link" href="#">Политика</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Спорт</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Общество</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Наука</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Экономика</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Культура</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">В Мире</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Недвижимость</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Происшествия</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Туризм</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page-news">
+      <div class="container">
+        <div class="page-news__wrapper">
+          <div class="page-news__news">
+            <h1 class="page-news__title">Тенденции в Развитии Искусственного Интеллекта в 2024 Году</h1>
+            <div class="page-news__article">
+              <h2 class="page-news__subtitle" id="news-subtitle-1">Искусственный Интеллект и Обработка Естественного
+                Языка</h2>
+              <p class="page-news__text">Искусственный интеллект (ИИ) продолжает продвигаться в области обработки
+                естественного языка (NLP). Компании разрабатывают модели, способные понимать и генерировать человеческую
+                речь, что позволяет создавать более интерактивные чат-боты, голосовые помощники и системы распознавания
+                речи. Интересно отметить, что современный ИИ способен не только обрабатывать текст, но и генерировать
+                сложные контексты, что находит применение в виртуальных ассистентах, таких как Siri и Alexa.
+              </p>
+            </div>
+
+            <div class="page-news__article">
+              <h2 class="page-news__subtitle" id="news-subtitle-2">Применение ИИ в Медицине</h2>
+              <p class="page-news__text">ИИИ в медицине становится более распространенным, помогая врачам в диагностике
+                и принятии решений. Системы машинного обучения анализируют медицинские изображения, такие как
+                рентгеновские снимки, МРТ и КТ, чтобы выявлять аномалии и давать рекомендации врачам. Этот подход
+                позволяет сократить время диагностики и повысить точность, что особенно важно в случаях онкологии и
+                кардиологии. Однако, применение ИИ в медицине вызывает вопросы о безопасности данных пациентов и их
+                приватности.
+              </p>
+            </div>
+
+            <div class="page-news__article">
+              <h2 class="page-news__subtitle" id="news-subtitle-3">Искусственный Интеллект в Автомобилестроении</h2>
+              <p class="page-news__text">Автомобилестроение становится все более умным благодаря ИИ. Самоуправляемые
+                автомобили, системы помощи водителю и умные навигационные системы - все это стало возможным благодаря
+                достижениям в области ИИ. Компании, такие как Tesla, продолжают совершенствовать свои технологии
+                автопилота, внедряя нейронные сети для улучшения распознавания объектов и принятия решений на дороге.
+                Однако вопросы безопасности и ответственности в случае аварий остаются важными проблемами, которые нужно
+                решать.
+              </p>
+            </div>
+
+            <div class="page-news__article">
+              <h2 class="page-news__subtitle" id="news-subtitle-4">ИИ в Кибербезопасности</h2>
+              <p class="page-news__text">С ростом киберугроз ИИ становится ключевым инструментом в борьбе с
+                кибератаками. Системы машинного обучения могут анализировать большие объемы данных и обнаруживать
+                аномалии, указывающие на потенциальные угрозы. Эти технологии помогают предприятиям и организациям
+                укреплять свои системы безопасности, обеспечивая более быструю реакцию на кибератаки. Тем не менее,
+                злоумышленники также используют ИИ для создания более сложных атак, что требует постоянного улучшения
+                технологий защиты.
+              </p>
+            </div>
+
+            <div class="page-news__article">
+              <h2 class="page-news__subtitle" id="news-subtitle-5">Будущее Искусственного Интеллекта</h2>
+              <p class="page-news__text">Будущее ИИ выглядит захватывающим, но также вызывает много вопросов. С одной
+                стороны, ИИ имеет потенциал для значительных достижений в различных областях, от медицины до
+                образования. С другой стороны, общество сталкивается с этическими вопросами, такими как потеря рабочих
+                мест, приватность данных и предвзятость алгоритмов. Компании и правительства должны работать вместе,
+                чтобы обеспечить ответственное и безопасное использование ИИ, обеспечивая баланс между инновациями и
+                этикой.
+              </p>
+            </div>
+          </div>
+          <div class="page-news__nav">
+            <h2 class="page-news__nav-title">Разделы:</h2>
+            <ul class="page-news__nav-list">
+              <li class="page-news__nav-item">
+                <a class="page-news__nav-link" href="#news-subtitle-1">Искусственный Интеллект и Обработка Естественного
+                  Языка</a>
+              </li>
+              <li class="page-news__nav-item">
+                <a class="page-news__nav-link" href="#news-subtitle-2">Применение ИИ в Медицине</a>
+              </li>
+              <li class="page-news__nav-item">
+                <a class="page-news__nav-link" href="#news-subtitle-3">Искусственный Интеллект в Автомобилестроении</a>
+              </li>
+              <li class="page-news__nav-item">
+                <a class="page-news__nav-link" href="#news-subtitle-4">ИИ в Кибербезопасности</a>
+              </li>
+              <li class="page-news__nav-item">
+                <a class="page-news__nav-link" href="#news-subtitle-5">Будущее Искусственного Интеллекта</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hot-news">
+      <div class="container">
+        <h2 class="hot-news__title">Горячее</h2>
+        <ul class="hot-news__list">
+          <li class="hot-news__item">
+            <div class="news-card">
+              <div class="news-card__info">
+                <span class="news-card__info-text">11 апреля 2024</span>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">1.2K</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-eye"></use>
+                  </svg>
+                </div>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">5 минут</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-time"></use>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="news-card__title">«Яндекс» протестирует сервис облачного гейминга</h2>
+              <p class="news-card__description">Компания начала принимать заявки на участие в тестах</p>
+            </div>
+          </li>
+          <li class="hot-news__item">
+            <div class="news-card">
+              <div class="news-card__info">
+                <span class="news-card__info-text">11 апреля 2024</span>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">8K</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-eye"></use>
+                  </svg>
+                </div>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">2 минуты</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-time"></use>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="news-card__title">69% россиян хотели бы работать в гибридном формате</h2>
+              <p class="news-card__description">Среди преимуществ работы из офисы — оборудование, зона отдыха и штатный
+                психолог</p>
+            </div>
+          </li>
+          <li class="hot-news__item">
+            <div class="news-card">
+              <div class="news-card__info">
+                <span class="news-card__info-text">11 апреля 2024</span>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">10.4K</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-eye"></use>
+                  </svg>
+                </div>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">6 минут</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-time"></use>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="news-card__title">Конкурент Neuralink Илон Маска начал набор пациентов для испытаний</h2>
+              <p class="news-card__description">Более 100 организаций выразили готовность к участию в испытаниях</p>
+            </div>
+          </li>
+          <li class="hot-news__item hot-news__item--flat">
+            <div class="subscribe-banner">
+              <h2 class="subscribe-banner__title">Подпишитесь на наши новости</h2>
+              <a class="subscribe-banner__link" href="#">Подписаться</a>
+            </div>
+          </li>
+          <li class="hot-news__item">
+            <div class="news-card">
+              <div class="news-card__info">
+                <span class="news-card__info-text">10 апреля 2024</span>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">12K</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-eye"></use>
+                  </svg>
+                </div>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">8 минут</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-time"></use>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="news-card__title">В России представили первую мультимодальную модель OmniFusion</h2>
+              <p class="news-card__description">У модели – открытый исходный код, ее можно использовать в коммерческих
+                целях</p>
+            </div>
+          </li>
+          <li class="hot-news__item">
+            <div class="news-card">
+              <div class="news-card__info">
+                <span class="news-card__info-text">10 апреля 2024</span>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">1.5K</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-eye"></use>
+                  </svg>
+                </div>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">4 минуты</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-time"></use>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="news-card__title">Oppo представила смартфон A60 с Snapdragon 680 и 50-Мп камерой</h2>
+              <p class="news-card__description">Компания Oppo представила смартфон среднего уровня Oppo A60.</p>
+            </div>
+          </li>
+          <li class="hot-news__item">
+            <div class="news-card">
+              <div class="news-card__info">
+                <span class="news-card__info-text">09 апреля 2024</span>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">8.2K</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-eye"></use>
+                  </svg>
+                </div>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">11 минут</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-time"></use>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="news-card__title">Игроков впечатлила работа Biomutant на Nintendo Switch</h2>
+              <p class="news-card__description">Спустя три года после премьеры ролевой боевик Biomutant готовится к выходу на Nintendo Switch.</p>
+            </div>
+          </li>
+          <li class="hot-news__item">
+            <div class="news-card">
+              <div class="news-card__info">
+                <span class="news-card__info-text">09 апреля 2024</span>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">2.2K</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-eye"></use>
+                  </svg>
+                </div>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">5 минут</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-time"></use>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="news-card__title">На ПК вышла средневековая градостроительная стратегия</h2>
+              <p class="news-card__description">Как и было обещано, 26 апреля на ПК стартовал ранний доступ средневековой градостроительной стратегии Manor Lords.</p>
+            </div>
+          </li>
+          <li class="hot-news__item">
+            <div class="news-card">
+              <div class="news-card__info">
+                <span class="news-card__info-text">09 апреля 2024</span>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">1.2K</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-eye"></use>
+                  </svg>
+                </div>
+                <div class="news-card__info-inner">
+                  <span class="news-card__info-text">8 минут</span>
+                  <svg class="header__burger" width="16" height="16" aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#icon-time"></use>
+                  </svg>
+                </div>
+              </div>
+              <h2 class="news-card__title">Объём российского IoT-рынка превысил 35 млрд руб.</h2>
+              <p class="news-card__description">Количество устройств Интернета вещей (IoT) в России достигло приблизительно 60 млн единиц.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <a class="footer__logo-link" href="#" aria-label="Ссылка на главную">
+          <svg class="footer__logo-icon" width="60" height="60" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-logo-footer"></use>
+          </svg>
+        </a>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Статьи</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Мнения</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Эфиры</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Инфографика</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">О СМИ </a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Редакция</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+        </ul>
+        <div class="footer__connection">
+          <ul class="socials">
+            <li class="socials__list">
+              <a class="socials__link" href="#" aria-label="Ссылка на вконтакте">
+                <svg class="socials__link-icon" width="17" height="9" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-vk-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__list">
+              <a class="socials__link" href="#" aria-label="Ссылка на телеграмм">
+                <svg class="socials__link-icon" width="15" height="12" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-tg-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__list">
+              <a class="socials__link" href="#" aria-label="Ссылка на одноклассники">
+                <svg class="socials__link-icon" width="9" height="14" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-ok-footer"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__list">
+              <a class="socials__link" href="#" aria-label="Ссылка на youtube">
+                <svg class="socials__link-icon" width="13" height="10" aria-hidden="true">
+                  <use xlink:href="images/sprite.svg#icon-yt-footer"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="footer__copyright">© 2004-2024 ООО "Вкурсе-Медиа"</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

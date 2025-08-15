@@ -1,0 +1,160 @@
+.main-nav {
+  @include vp-1023 {
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 81px);
+    top: 81px;
+    left: 0;
+    background-color: $color-endeavour;
+    padding: 50px 0;
+    overflow-y: auto;
+    display: none;
+    flex-direction: column;
+  }
+
+  @include vp-767 {
+    padding: 40px 0;
+    
+  }
+
+  &__wrapper {
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+  }
+
+  &__inner {
+    @include vp-1023 {
+      display: flex;
+      gap: 120px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    @include vp-767 {
+      margin: 0 0 30px;
+      gap: 50px;
+    }
+  }
+
+  &__head {
+    display: none;
+
+    @include vp-1023 {
+      display: flex;
+      color: $color-white;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 500;
+      margin: 0 0 40px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0 0 20px;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px 40px;
+    flex-wrap: wrap;
+
+    @media (max-width: 1250px) {
+      gap: 10px 20px;
+    }
+
+    @include vp-1023 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 40px;
+      width: 150px;
+    }
+
+    @include vp-767 {
+      width: 120px;
+      gap: 20px;
+    }
+
+    &--menu {
+      display: none;
+
+      @include vp-1023 {
+        display: flex;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $color-endeavour;
+
+    @media (max-width: 1150px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @include vp-1023 {
+      color: $color-white;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &__social {
+    display: none;
+
+    @include vp-1023 {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding: 0;
+      margin: auto 0 20px;
+      list-style: none;
+      position: fixed;
+      right: 40px;
+      top: calc(81px + 50px);
+    }
+
+    @include vp-767 {
+      position: relative;
+      right: auto;
+      top: auto;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  &__social-link {
+    display: flex;
+  }
+
+  &__phone {
+    display: none;
+
+    @include vp-767 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 18px;
+      line-height: 22px;
+      color: $color-white;
+    }
+  }
+}
