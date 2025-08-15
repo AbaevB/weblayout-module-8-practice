@@ -23,32 +23,9 @@
     border-radius: 8px;
     border: 1px solid $color-white;
     color: $color-white;
-
-    &:hover,
-    &:focus-visible {
-      opacity: 0.8;
-    }
   }
 
   &__link-icon {
     flex-shrink: 0;
-  }
-
-  &--bg {
-    gap: 10px;
-    margin-left: auto;
-
-    @include vp-1023 {
-      justify-content: center;
-      margin: 0 auto;
-    }
-
-    .social__link {
-      width: 42px;
-      height: 40px;
-      background: linear-gradient(153.06deg, #1E3B70 -0.31%, #29539B 99.69%);
-      border: none;
-      border-radius: 50%;
-    }
   }
 }
