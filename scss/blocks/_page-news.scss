@@ -93,9 +93,7 @@
   }
 
   &__nav-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    @include list-reset;
     display: flex;
     flex-direction: column;
     gap: 20px;
