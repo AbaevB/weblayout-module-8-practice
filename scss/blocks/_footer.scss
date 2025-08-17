@@ -34,9 +34,7 @@
   }
 
   &__nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    @include list-reset;
     column-gap: 10px;
     columns: 3;
 
