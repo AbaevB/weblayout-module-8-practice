@@ -8,6 +8,10 @@
     gap: 15px;
   }
 
+  &__item:last-child {
+    overflow: hidden;
+  }
+
   &__link {
     font-size: 12px;
     line-height: 18px;
@@ -27,6 +31,10 @@
 
     &:not(a) {
       color: $color-black;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      display: block;
     }
   }
 }
