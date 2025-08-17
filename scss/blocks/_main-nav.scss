@@ -1,4 +1,8 @@
 .main-nav {
+  @include vp-1023  {
+    display: none;
+  }
+
   &__list {
     @include list-reset;
     display: flex;
