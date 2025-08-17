@@ -19,10 +19,18 @@
     color: $color-endeavour;
     margin: 0 50px 0 0;
 
+    @media (max-width: 1150px) {
+     margin: 0 20px 0 0;
+    }
+
     svg {
       height: 60px;
       width: 170px;
     }
+  }
+
+  &__main-nav {
+    margin: 0 20px 0 0;
   }
 
   &__phone {
@@ -30,6 +38,12 @@
     font-size: 18px;
     line-height: 22px;
     margin: 0 30px 0 auto;
+
+    @media (max-width: 1100px)  {
+      margin: 0 15px 0 auto;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &__users-list {
@@ -37,6 +51,10 @@
     gap: 25px;
     display: flex;
     align-items: center;
+
+     @media (max-width: 1100px)   {
+      gap: 15px;
+     }
   }
 
   &__users-link {
@@ -49,6 +67,11 @@
     svg {
       height: 32px;
       width: 32px;
+
+      @media (max-width: 1100px) {
+        width: 28px;
+        height: 28px;
+      }
     }
   }
 }
