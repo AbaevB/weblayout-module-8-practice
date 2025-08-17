@@ -1,6 +1,38 @@
 .main-nav {
   @include vp-1023  {
     display: none;
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 81px);
+    top: 81px;
+    left: 0;
+    background-color: $color-endeavour;
+    padding: 50px 0;
+    overflow-y: auto;
+
+
+  }
+
+  &__inner  {
+    @include vp-1023  {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      gap: 120px;
+    }
+  }
+
+  &__head {
+    display: none;
+
+    @include vp-1023  {
+        margin: 0 0 40px;
+        display: flex;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: $color-white
+      }
   }
 
   &__list {
@@ -13,6 +45,23 @@
     @media (max-width: 1250px)  {
       gap: 10px 20px;
     }
+
+    &--menu {
+      display: none;
+
+      @include vp-1023  {
+        display: flex;
+      }
+
+
+    }
+
+    @include vp-1023  {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        width: 150px;
+      }
   }
 
   &__link {
@@ -26,5 +75,27 @@
       font-size: 14px;
       line-height: 20px;
      }
+
+     @include vp-1023 {
+      font-size: 16px;
+      line-height: 24px;
+      color: $color-white;
+     }
   }
+
+  &__social {
+    display: none;
+
+    @include vp-1023  {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: (81px + 50px);
+        right: 40px;
+        @include list-reset;
+        gap: 40px;
+      }
+  }
+
+
 }

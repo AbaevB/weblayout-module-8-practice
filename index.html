@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="css/style.css" rel="stylesheet">
   <title>Новости - Вкурсе-медиа</title>
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -53,7 +54,7 @@
                     <h2 class="main-nav__head">
                       Рубрики
                     </h2>
-                    <ul class="main-nav__list">
+                    <ul class="main-nav__list main-nav__list--menu">
                       <li class="main-nav__item">
                         <a class="main-nav__link" href="#">
                           Политика
@@ -160,9 +161,12 @@
           </li>
 
           <li class="header__users-item header__users-item--burger">
-            <button class="header__users-link" aria-label="Главное меню" type="button">
-              <svg class="header__logo" aria-hidden="true" width="32" height="32">
+            <button id="burger" class="header__users-link" aria-label="Главное меню" type="button">
+              <svg class="header__burger" aria-hidden="true" width="32" height="32">
                 <use xlink:href="images/sprite.svg#icon-burger"></use>
+              </svg>
+              <svg class="header__burger header__burger--close" aria-hidden="true" width="32" height="32">
+                <use xlink:href="images/sprite.svg#icon-burger-close"></use>
               </svg>
             </button>
           </li>
