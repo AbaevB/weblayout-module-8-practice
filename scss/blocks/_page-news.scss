@@ -12,6 +12,11 @@
     align-items: start;
     padding: 0 40px 0 0;
 
+    @media (max-wisth: 1200px) {
+      padding: 0;
+      gap: 50px;
+    }
+
     @include vp-1023 {
       padding: 0;
       grid-template-columns: 1fr;
