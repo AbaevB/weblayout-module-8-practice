@@ -1,0 +1,162 @@
+.main-nav {
+  @include vp-1023  {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 81px);
+    top: 81px;
+    left: 0;
+    background-color: $color-endeavour;
+    padding: 50px 0;
+    overflow-y: auto;
+  }
+
+  @include vp-767 {
+    padding: 40px 0;
+  }
+
+  &__wrapper  {
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+  }
+
+  &__inner  {
+    @include vp-1023  {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      gap: 120px;
+    }
+
+    @include vp-767 {
+      margin: 0 0 30px;
+      gap: 50px;
+    }
+  }
+
+  &__head {
+    display: none;
+
+    @include vp-1023  {
+        margin: 0 0 40px;
+        display: flex;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: $color-white
+      }
+
+      @include vp-767 {
+        margin: 0 0 20px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+  }
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    @media (max-width: 1270px)  {
+      gap: 10px 20px;
+    }
+
+    &--menu {
+      display: none;
+
+      @include vp-1023  {
+        display: flex;
+      }
+
+
+    }
+
+    @include vp-1023  {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        width: 150px;
+      }
+
+      @include vp-767 {
+        width: 120px;
+        gap: 20px;
+      }
+  }
+
+  &__link {
+    display: flex;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: $color-endeavour;
+
+     @media (max-width: 1120px)   {
+      font-size: 14px;
+      line-height: 20px;
+     }
+
+     @include vp-1023 {
+      font-size: 16px;
+      line-height: 24px;
+      color: $color-white;
+     }
+
+     @include vp-767  {
+      font-size: 14px;
+      line-height: 18px;
+     }
+  }
+
+  &__social {
+    display: none;
+
+    @include vp-1023  {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: (81px + 50px);
+        right: 40px;
+        @include list-reset;
+        gap: 40px;
+      }
+
+      @include vp-767 {
+        margin: auto 0 20px;
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        top: auto;
+        right: auto;
+      }
+  }
+
+  &__social-link  {
+    @include vp-1023  {
+      display: flex;
+    }
+  }
+
+  &__phone  {
+    display: none;
+
+    @include vp-767 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: $color-white;
+    }
+  }
+
+}

@@ -1,0 +1,40 @@
+.breadcrumbs {
+  padding: 20px 0 0;
+
+  &__list {
+    @include list-reset;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__item:last-child {
+    overflow: hidden;
+  }
+
+  &__link {
+    font-size: 12px;
+    line-height: 18px;
+    position: relative;
+    display: flex;color: $color-stor-grey;
+
+    &:not(span)::after {
+      content: "";
+      height: 3px;
+      width: 3px;
+      background-color: $color-black;
+      position: absolute;
+      right: -9px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:not(a) {
+      color: $color-black;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      display: block;
+    }
+  }
+}
