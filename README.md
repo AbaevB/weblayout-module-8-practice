@@ -1,4 +1,4 @@
-# weblayout-module-8-practice
+# weblayout-module-8-practice (V 1.0.0)
 
 > Практическое занятие по резиновой верстке
 
