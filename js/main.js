@@ -1,12 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   const burger = document.getElementById("burger");
-  console.log(burger);
   const header = document.getElementById("header");
-  console.log(header);
-
   const mainNavLinks = document.getElementsByClassName("main-nav__link");
-  console.log(mainNavLinks);
 
   burger.addEventListener("click", function () {
     header.classList.toggle("header--open");
