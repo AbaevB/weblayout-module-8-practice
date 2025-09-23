@@ -1,2 +1,9 @@
-# weblayout-module-8-practice
+# Weblayout-module-8-practice
+
 Домашняя работа 1 к модулю 8 Веб-верстка
+
+## Первый этап
+> Вёрстка адаптивного меню (часть 1)
+
+### Блок header
+
