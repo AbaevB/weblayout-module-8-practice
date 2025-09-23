@@ -1,7 +1,19 @@
 .main-nav {
 
   @include vp-1023  {
+    position: fixed;
+    top: 81px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 81px);
+  }
+
+  &__head {
     display: none;
+    @include vp-1023  {
+        display: flex;
+      }
+
   }
 
   &__list {
@@ -13,9 +25,19 @@
     gap: 40px;
     flex-wrap: wrap;
 
+    &--menu {
+      display: none;
+
+      @include vp-1023  {
+        display: flex;
+      }
+    }
+
     @media (max-width: 1250px){
       gap: 10px 20px;
     }
+
+
   }
 
   &__link {
@@ -29,5 +51,13 @@
       font-size: 14px;
       line-height: 20px;
     }
+  }
+
+  &__social {
+    display: none;
+
+    @include vp-1023  {
+        display: flex;
+      }
   }
 }
