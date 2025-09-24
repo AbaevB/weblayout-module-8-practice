@@ -802,6 +802,12 @@ a {
   align-items: start;
   padding: 0 40px 0 0;
 }
+@media (max-width: 1200px) {
+  .page-news__wrapper {
+    padding: 0;
+    gap: 50px;
+  }
+}
 @media (max-width: 1023px) {
   .page-news__wrapper {
     padding: 0;
@@ -934,12 +940,13 @@ a {
 }
 .hot-news__title::after {
   content: "";
-  width: 100%;
+  width: 100vw;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   height: 1px;
   background-color: rgba(41, 83, 155, 0.2);
   bottom: 0;
-  left: 0;
 }
 .hot-news__list {
   margin: 0;

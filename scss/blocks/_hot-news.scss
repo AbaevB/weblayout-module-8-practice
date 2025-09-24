@@ -28,13 +28,16 @@
 
     &::after {
       content: "";
-      width: 100%;
+      width: 100vw;
       position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       height: 1px;
       background-color: rgba($color-endeavour, 0.2);
       bottom: 0;
-      left: 0;
     }
+
+
   }
 
   &__list {
