@@ -417,6 +417,30 @@ a {
   z-index: 20;
   background-color: #ffffff;
 }
+@media (max-width: 1023px) {
+  .header--active {
+    background-color: #29539B;
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  .header--active .header__logo-link {
+    color: #ffffff;
+  }
+  .header--active .header__phone {
+    color: #ffffff;
+  }
+  .header--active .header__users-link {
+    color: #ffffff;
+  }
+  .header--active .header__burger-icon {
+    display: none;
+  }
+  .header--active .header__burger-icon--close {
+    display: flex;
+  }
+  .header--active .header__main-nav {
+    display: flex;
+  }
+}
 .header__content {
   display: flex;
   align-items: center;
@@ -511,14 +535,30 @@ a {
     height: 32px;
   }
 }
+.header__burger-icon--close {
+  display: none;
+}
 
 @media (max-width: 1023px) {
   .main-nav {
+    display: none;
     position: fixed;
     top: 81px;
     left: 0;
     width: 100%;
     height: calc(100vh - 81px);
+    padding: 50px 0;
+    background-color: #29539B;
+    overflow-y: auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 1023px) {
+  .main-nav__inner {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    width: 100%;
   }
 }
 .main-nav__head {
@@ -527,6 +567,10 @@ a {
 @media (max-width: 1023px) {
   .main-nav__head {
     display: flex;
+    margin: 0 0 40px;
+    font-size: 22px;
+    line-height: 26px;
+    color: #ffffff;
   }
 }
 .main-nav__list {
@@ -551,6 +595,14 @@ a {
     gap: 10px 20px;
   }
 }
+@media (max-width: 1023px) {
+  .main-nav__list {
+    flex-direction: column;
+    gap: 40px;
+    width: 150px;
+    align-items: flex-start;
+  }
+}
 .main-nav__link {
   display: flex;
   font-size: 16px;
@@ -564,12 +616,27 @@ a {
     line-height: 20px;
   }
 }
+@media (max-width: 1023px) {
+  .main-nav__link {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+}
 .main-nav__social {
   display: none;
 }
 @media (max-width: 1023px) {
   .main-nav__social {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     display: flex;
+    position: fixed;
+    top: 131px;
+    right: 50px;
+    flex-direction: column;
+    gap: 40px;
   }
 }
 

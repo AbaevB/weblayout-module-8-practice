@@ -1,17 +1,36 @@
 .main-nav {
 
   @include vp-1023  {
+    display: none;
     position: fixed;
     top: 81px;
     left: 0;
     width: 100%;
     height: calc(100vh - 81px);
+    padding: 50px 0;
+    background-color: $color-endeavour;
+    overflow-y: auto;
+    justify-content: center;
+  }
+
+  &__inner  {
+    @include vp-1023  {
+      display: flex;
+      justify-content: center;
+      gap: 120px;
+      width: 100%;
+
+    }
   }
 
   &__head {
     display: none;
     @include vp-1023  {
         display: flex;
+        margin: 0 0 40px;
+        font-size: 22px;
+        line-height: 26px;
+        color: $color-white;
       }
 
   }
@@ -37,6 +56,12 @@
       gap: 10px 20px;
     }
 
+    @include vp-1023  {
+      flex-direction: column;
+      gap: 40px;
+      width: 150px;
+      align-items: flex-start;
+    }
 
   }
 
@@ -51,13 +76,25 @@
       font-size: 14px;
       line-height: 20px;
     }
+
+    @include vp-1023  {
+      font-size: 16px;
+      line-height: 24px;
+      color: $color-white;
+    }
   }
 
   &__social {
     display: none;
 
     @include vp-1023  {
+        @include list-reset;
         display: flex;
+        position: fixed;
+        top: calc(81px + 50px);
+        right: 50px;
+        flex-direction: column;
+        gap: 40px;
       }
   }
 }
