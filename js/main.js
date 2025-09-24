@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
   })
 
  headerLink.forEach((item) => {
-    item.addEventListener('click', function(e) { // добавляем аргумент e
-      e.stopPropagation();                     // останавливаем всплытие события
+    item.addEventListener('click', function(e) {
+      e.stopPropagation();
       header.classList.remove('header--active');
     });
   });
