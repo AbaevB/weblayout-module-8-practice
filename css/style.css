@@ -707,6 +707,9 @@ a {
   align-items: center;
   gap: 15px;
 }
+.breadcrumbs__item:last-child {
+  overflow: hidden;
+}
 .breadcrumbs__link {
   font-size: 12px;
   line-height: 18px;
@@ -725,7 +728,11 @@ a {
   transform: translateY(-50%);
 }
 .breadcrumbs__link:not(a) {
+  display: block;
   color: #000000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .categories {
@@ -745,6 +752,23 @@ a {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+}
+@media (max-width: 1023px) {
+  .categories__list {
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin: 0 -40px;
+    padding: 0 40px;
+  }
+  .categories__list::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (max-width: 1023px) and (max-width: 767px) {
+  .categories__list {
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
 }
 .categories__item {
   display: flex;

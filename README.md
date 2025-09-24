@@ -32,3 +32,22 @@
 - Адаптация меню для мобильных устройств
   - добавление ссылки *main-nav__phone*
   - позиционирование списка соцсетей
+
+## Третий этап
+>
+> Вёрстка резинового блока (часть 1)
+
+### Хлебные крошки
+
+- Применение свойства ```css text-overflow: ellipsis;``` для последнего элемента хлебных крошек.
+
+```css
+.breadcrumbs__link:not(a) {
+  display: block;
+  color: #000000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+```
+
