@@ -346,6 +346,10 @@ template {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ffffff;
   color: #000000;
@@ -834,7 +838,8 @@ a {
 .page-news__subtitle {
   font-size: 30px;
   line-height: 34px;
-  margin: 0 0 20px;
+  margin: -90px 0 20px;
+  padding: 90px 0 0;
   font-weight: 500;
 }
 @media (max-width: 1023px) {
