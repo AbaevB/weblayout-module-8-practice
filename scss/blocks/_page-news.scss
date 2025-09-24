@@ -78,6 +78,8 @@
 
   &__nav {
     margin: 0 0 20px;
+    position: sticky;
+    top: 90px;
 
     @include vp-1023 {
       display: none;

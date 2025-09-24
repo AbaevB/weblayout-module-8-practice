@@ -864,6 +864,8 @@ a {
 }
 .page-news__nav {
   margin: 0 0 20px;
+  position: sticky;
+  top: 90px;
 }
 @media (max-width: 1023px) {
   .page-news__nav {
